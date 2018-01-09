@@ -8,3 +8,8 @@ mysite.zip
 
 #testing again, close again!!!
 __pycache__/
+
+
+#數據不要上傳
+db.sqlite3
+mysite/db.sqlite3
