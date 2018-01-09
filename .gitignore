@@ -1,2 +1,6 @@
 # 初次的ZIP檔案, 不必上傳或部署
 mysite.zip
+
+# 是否在最上層,所有APP都有效
+
+__pycache__/
