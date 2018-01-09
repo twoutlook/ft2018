@@ -10,6 +10,6 @@ mysite.zip
 __pycache__/
 
 
-#數據不要上傳
+#數據不要上傳, 不受目錄影響, 只要同名就...擋
 db.sqlite3
-mysite/db.sqlite3
+#mysite/db.sqlite3
