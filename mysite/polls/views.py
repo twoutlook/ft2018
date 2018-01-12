@@ -10,6 +10,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 
 from .models import Choice, Question
+from .models import FtDev
+
 
 
 # def index(request):
@@ -22,9 +24,14 @@ from .models import Choice, Question
 #     return HttpResponse(output)
 
 
+# def index(request):
+#     latest_question_list = Question.objects.order_by('-pub_date')[:12]
+#     context = {'latest_question_list': latest_question_list}
+#     return render(request, 'polls/index.html', context)
+
 def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:12]
-    context = {'latest_question_list': latest_question_list}
+    ft_dev_list = FtDev.objects.order_by('dev_datetime')[:12]
+    context = {'ft_dev_list': ft_dev_list}
     return render(request, 'polls/index.html', context)
 
 def detail(request, question_id):

@@ -4,6 +4,20 @@ from django.db import models
 from django.db import models
 
 
+
+class FtDev(models.Model):
+    dev_datetime = models.DateTimeField('date published')
+    dev_duration = models.FloatField('hours')
+
+    dev_topic = models.CharField(max_length=500, default='.')
+    dev_description = models.CharField(max_length=500, default='.')
+    dev_review = models.CharField(max_length=500, default='.')
+
+    def __str__(self):
+        return self.dev_topic
+
+
+
 class Yazhu(models.Model):
     work_date = models.DateField('date published')
     work_prod = models.CharField(max_length=50, default='.')

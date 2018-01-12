@@ -2,16 +2,16 @@
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
-<h1>FT2018压铸/模具</h1>
+<h1>FT2018 压铸/模具 開發</h1>
 
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
-{{ question.question_description }}
+{% if ft_dev_list %}
+
+    {% for item in ft_dev_list %}
+  <H3>{{ item.dev_topic }} {{ item.dev_datetime }}  {{ item.dev_duration }}       </H3>
+{{ item.dev_description }}
     </li>
     {% endfor %}
     </ul>
 {% else %}
-    <p>No polls are available.</p>
+    <p>No ft_dev_list are available.</p>
 {% endif %}
