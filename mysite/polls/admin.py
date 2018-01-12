@@ -1,4 +1,4 @@
-
+from import_export import resources
 from django.contrib import admin
 
 # from .models import Question
@@ -9,9 +9,23 @@ from django.contrib import admin
 from .models import Choice, Question
 from .models import Yazhu
 
+
+# wny .108 not show FtDev on admin yet?
 from .models import FtDev
 
-admin.site.register(FtDev)
+
+from import_export.admin import ImportExportModelAdmin
+
+
+class FtDevResource(resources.ModelResource):
+    class Meta:
+        model = FtDev
+
+class FtDevAdmin(ImportExportModelAdmin):
+    resource_class = FtDevResource
+
+
+admin.site.register(FtDev,FtDevAdmin)
 
 
 

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['10.10.0.108','127.0.0.1','test2018-001-twoutlook.c9users.io']
 
 INSTALLED_APPS = [
     'polls',
+    'import_export',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
