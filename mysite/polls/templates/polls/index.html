@@ -5,11 +5,22 @@
 <h1>FT2018 压铸/模具 開發</h1>
 
 {% if ft_dev_list %}
-<table>
+<table class='gridtable'>
+  <tr>
+    <th>  </th>
+    <th>主題   </th>
+    <th> 日期時間 </th>
+    <th> 時間  </th>
+    <th>說明 </th>
+    <th>評估結果</th>
+
+  </tr>
+
     {% for item in ft_dev_list %}
     <tr>
+      <th> {{ forloop.counter }} </th>
       <td>{{ item.dev_topic }}   </td>
-      <td> {{ item.dev_datetime }} </td>
+      <td> {{ item.dev_datetime | date:'Y-m-d H:i'}} </td>
       <td>  {{ item.dev_duration }}  </td>
       <td>{{ item.dev_description }} </td>
       <td>{{ item.dev_review }} </td>
