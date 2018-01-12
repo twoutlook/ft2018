@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['10.10.0.108','127.0.0.1','test2018-001-twoutlook.c9users.io']
 # Application definition
 
 INSTALLED_APPS = [
+    'uploadfile',
     'polls',
     'import_export',
     'django.contrib.admin',
@@ -121,3 +122,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')#this line is added and it serves as the root address of
+#uploaded file
+
+MEDIA_URL = '/media/'#this line is added and it creates a directory named media in your appfolder
+#where the uploaded images will be stored

@@ -14,6 +14,7 @@ from .models import FtDev
 
 
 
+
 # def index(request):
 #     return HttpResponse("<h1>中文</h1> Hello, world. You're at the polls index.")
 
