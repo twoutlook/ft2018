@@ -1,8 +1,12 @@
 
 {% load static %}
-
+<link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap.min.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+
 <h1>FT2018 压铸/模具 開發</h1>
+<a class='btn btn-primary' href='http://10.10.0.111'>压铸</a>&nbsp;
+<a class='btn btn-primary' href='http://10.10.0.112'>模具</a>
 
 {% if ft_dev_list %}
 <table class='gridtable'>

@@ -1,7 +1,7 @@
 from django.urls import path
 
 from . import views
-
+from django.views.generic import TemplateView
 # urlpatterns = [
 #     path('', views.index, name='index'),
 # ]
@@ -15,4 +15,10 @@ urlpatterns = [
     path('<int:question_id>/results/', views.results, name='results'),
     # ex: /polls/5/vote/
     path('<int:question_id>/vote/', views.vote, name='vote'),
+
+    # url(r'^profile/',TemplateView.as_view(
+    #   template_name = 'profile.html')),
+    #  url(r'^saved/', 'SaveProfile', name = 'saved')
+
+
 ]
