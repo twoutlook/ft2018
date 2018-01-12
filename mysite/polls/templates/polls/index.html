@@ -1,9 +1,20 @@
 
 {% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap.min.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
 
-
+</head>
+ <body>
+      <div class="container-fluid">
+        <a class='btn btn-primary btn-lg' href='http://portal.fulltech-metal.com/'>企業入口網站</a>&nbsp;
 <h1>FT2018 压铸/模具 開發</h1>
 <a class='btn btn-primary' href='http://10.10.0.111'>压铸</a>&nbsp;
 <a class='btn btn-primary' href='http://10.10.0.112'>模具</a>
@@ -35,3 +46,10 @@
 {% else %}
     <p>No ft_dev_list are available.</p>
 {% endif %}
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <!-- <script src="js/bootstrap.min.js"></script> -->
+</div>
+</body>
+</html>
