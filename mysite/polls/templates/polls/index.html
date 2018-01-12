@@ -5,13 +5,16 @@
 <h1>FT2018 压铸/模具 開發</h1>
 
 {% if ft_dev_list %}
-
+<table>
     {% for item in ft_dev_list %}
-  <H3>{{ item.dev_topic }} {{ item.dev_datetime }}  {{ item.dev_duration }}       </H3>
-{{ item.dev_description }}
-    </li>
+    <tr>
+      <td>{{ item.dev_topic }}   </td>
+      <td> {{ item.dev_datetime }} </td>
+      <td>  {{ item.dev_duration }}  </td>
+      <td>{{ item.dev_description }} </td>
+    </tr>
     {% endfor %}
-    </ul>
+  </table>
 {% else %}
     <p>No ft_dev_list are available.</p>
 {% endif %}
