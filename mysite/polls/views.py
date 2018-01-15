@@ -35,6 +35,11 @@ def index(request):
     context = {'ft_dev_list': ft_dev_list}
     return render(request, 'polls/index.html', context)
 
+def indexDev(request):
+    ft_dev_list = FtDev.objects.order_by('dev_datetime')[:12]
+    context = {'ft_dev_list': ft_dev_list}
+    return render(request, 'polls/indexDev.html', context)
+
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/detail.html', {'question': question})
