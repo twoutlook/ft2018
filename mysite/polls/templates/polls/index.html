@@ -38,15 +38,43 @@
      <div class="row">
        <div class="col-md-4">
          <h2>壓鑄</h2>
+         <h3>需求說明</h3>
+
          <p>壓鑄希望有一個電子看板能夠顯示每日的不良統計表。 </p>
+         <p>壓鑄已採用新版的10個不良。但尚未在PDA報工和T100裡顯示出來。 </p>
+         <p>壓鑄將自行維護電子看板的數據內容。 </p>
+         <h3>技術要點</h3>
+
+         <p>企業內部自主開發目前有成熟查詢T100數據庫和簡易自主數據維護。 </p>
+         <p>開發階段選用數據庫SQLite，在調試正式環境和開發環境以操作和數據安全優先考量。 </p>
+         <p>目前的理解是用戶將自行維護每天不同產品在各壓鑄機的不良數據。 </p>
+
+         <h3>開發要點</h3>
+
+         <p>由於是企業內部自主開發的項目，限於人員編組，開發人員將直接面對需求單位和最終用戶溝通。 </p>
+         <p>優先完成最終顯示畫面的格局，提供用戶維護數據的基本功能。 </p>
           <p> <a class='btn btn-primary' href='http://10.10.0.111'>直接訪問正在開發的 Web App</a></p>
 
          <!-- <p><a class="btn btn-secondary" href="http://10.10.0.111" role="button">直接訪問正在開發的 Web App &raquo;</a></p> -->
        </div>
        <div class="col-md-4">
          <h2>模具</h2>
-         <p>模具希望在T100模具维修工单的基礎上，有一個電子看板，可以查看各種日期。 </p>
-         <p><a class="btn btn-primary" href="http://10.10.0.112" role="button">直接訪問正在開發的 Web App &raquo;</a></p>
+            <h3>需求說明</h3>
+            <p>模具希望在T100模具维修工单的基礎上，有一個電子看板，可以查看各種日期。 </p>
+            <p>模具用戶不希望在T100的介面維護各種日期。 </p>
+            <!-- <p><a class="btn btn-primary" href="http://10.10.0.112" role="button">直接訪問正在開發的 Web App &raquo;</a></p> -->
+
+         <h3>技術要點</h3>
+
+         <p>企業內部自主開發目前有成熟查詢T100數據庫和簡易自主數據維護。 </p>
+         <p>開發階段選用數據庫SQLite，在調試正式環境和開發環境以操作和數據安全優先考量。 </p>
+   <p>如何將在T100模具维修工单的基礎信息帶到FT2018 企業內部自主開發是個挑戰。 </p>
+         <h3>開發要點</h3>
+
+         <p>由於是企業內部自主開發的項目，限於人員編組，開發人員將直接面對需求單位和最終用戶溝通。 </p>
+         <p>優先完成最終顯示畫面的格局，提供用戶維護數據的基本功能。 </p>
+          <p> <a class='btn btn-primary' href='http://10.10.0.111'>直接訪問正在開發的 Web App</a></p>
+
         </div>
        <div class="col-md-4">
          <h2>量測</h2>
@@ -79,9 +107,10 @@
 
 <!-- <a class='btn btn-primary' href='http://10.10.0.111'>压铸</a>&nbsp;
 <a class='btn btn-primary' href='http://10.10.0.112'>模具</a> -->
-
-{% if ft_dev_list %}
 <h1>各項目記要</h1>
+（建構中...）
+<!-- {% if ft_dev_list %} -->
+<!-- <h1>各項目記要</h1>
 <table class='gridtable'>
   <tr>
     <th>  </th>
@@ -107,7 +136,7 @@
   </table>
 {% else %}
     <p>No ft_dev_list are available.</p>
-{% endif %}
+{% endif %} -->
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
  <!-- Include all compiled plugins (below), or include individual files as needed -->
